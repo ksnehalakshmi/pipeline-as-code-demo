@@ -3,12 +3,10 @@
 stage 'Dev'
 node {
   checkout scm
-   mvn 'clean package'
+  
+  bat 'mvn clean install'
+  
    dir('target') {stash name: 'war', includes: 'x.war'}
-}
-
-def mvn(args) {
-    sh "${tool 'M2'}/bin/mvn ${args}"
 }
 
 
