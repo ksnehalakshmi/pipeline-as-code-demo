@@ -9,4 +9,4 @@ node {
    dir('target') {stash name: 'war', includes: 'x.war'}
 }
 
-
+input message: "Does staging look good?"
