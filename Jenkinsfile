@@ -9,6 +9,12 @@ node {
   bat 'mvn package'
   
    dir('target') {stash name: 'war', includes: 'x.war'}
+   
+}
+stage 'readfile'
+node{
+  def line= readFile('C:/Users/ka268026/Downloads/DSL_Script_for_Jenkinsversion2_config.xml')
+  echo line
 }
 
 stage 'approve'
