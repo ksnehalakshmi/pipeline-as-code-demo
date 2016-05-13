@@ -9,4 +9,5 @@ node {
    dir('target') {stash name: 'war', includes: 'x.war'}
 }
 
+stage 'approve'
 input message: "Does staging look good?"
