@@ -8,7 +8,7 @@ node {
 }
 
 def mvn(args) {
-    sh "${tool 'Maven 3.x'}/bin/mvn ${args}"
+    sh "${tool 'M2'}/bin/mvn ${args}"
 }
 
 
