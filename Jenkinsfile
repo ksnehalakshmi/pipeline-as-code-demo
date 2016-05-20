@@ -16,7 +16,7 @@ node {
 stage 'simple'
 node {
 bat '''E: 
-E:\\softwares\\curl-7.48.0-win64-mingw\\bin\\curl.exe -H "Content-Type: application/json" -X POST -d \'{"phase":"DEV-Exit", "username":"snyamars","action":"BUILD-SUCCESS","sender":"jenkins"}\' http://localhost:8040/jenkins/job/subversion/build
+E:\\softwares\\curl-7.48.0-win64-mingw\\bin\\curl.exe -H "Content-Type: application/json" -X POST -d \'{"phase":"DEV-Exit", "username":"snyamars","action":"BUILD-SUCCESS","sender":"jenkins"}\' http://localhost:8080/job/subversion/build
 	'''
 }
 
