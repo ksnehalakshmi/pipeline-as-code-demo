@@ -7,7 +7,7 @@ node {
   bat 'mvn compile'
   bat 'mvn test'
   bat 'mvn package'
-  bat 'mvn --batch-mode -V -U -e clean deploy -U -DskipITs sonar:sonar -Dsonar.branch=${env.BRANCH_NAME} -Dsurefire.useFile=false'
+  bat 'mvn sonar:sonar'
    dir('target') {stash name: 'war', includes: 'x.war'}
    
 }
